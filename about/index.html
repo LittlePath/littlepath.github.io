@@ -7,9 +7,54 @@
     <meta name="author" content="Scott Davis <scott@thirstyhead.com>">
     <meta name="description" content="">
     <meta name="keywords" content="">
+  
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+        background-color: #4a5442;
+      }
+
+      main{
+        width: 100%;
+        position: relative;
+      }
+
+      .side-img{
+        float: left;
+        height: 100vh;
+      }
+
+      .section-overlay{
+        position: absolute;
+        top: 20vh;
+        left: 40vw;
+        height: 60vh;
+        width: 45vw;
+        z-index: 10;
+        border: black solid 1px;
+        background-color: #ccd4dc;
+        border-radius: 10px;
+        padding: 1em;
+      }
+
+      .section-underlay{
+      }
+    </style>
   </head>
 
   <body>
-    <h1>About LittlePath</h1>    
+    <main>
+      <section class="section-overlay">
+        <h1>About LittlePath</h1>
+        <p>LittlePath offers a collection of open source W3C Web Components that will help you assemble a privacy-first, accessible, standards-based video conferencing solution.</p>
+      </section>
+
+      <section class="section-underlay"> 
+        <img src="trail.jpg" 
+             alt="mountain trail"
+             class="side-img">
+      </section>
+    </main>
   </body>
 </html>
