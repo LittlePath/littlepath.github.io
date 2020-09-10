@@ -20,6 +20,16 @@
         position: relative;
       }
 
+      table{
+        border: black solid 1px;
+      }
+
+      td{
+        vertical-align: top;
+        padding: 0.5em;
+      }
+
+
       .side-img{
         float: left;
         height: 100vh;
@@ -52,12 +62,27 @@
 
         <table>
           <tr>
-            <td>&lt;video-preview&gt;<br>
-                <a href="https://littlepath.org/video-preview">[Demo]</a><br>
-                <a href="https://github.com/littlepath/video-preview">[Source]</a><br>
+            <td>
+              <b>&lt;video-preview&gt;</b><br>
             </td>
-            <td>This element turns on your camera and microphone. No data is transmitted.</td> 
+            <td>
+              This element turns on your camera. No data is transmitted.
+              <br><a href="https://littlepath.org/video-preview">[Demo]</a>
+                  <a href="https://github.com/littlepath/video-preview">[Source]</a>
+            </td> 
           </tr>
+
+          <tr>
+            <td>
+              <b>&lt;live-transcript&gt;</b><br>
+            </td>
+            <td>
+              This element turns on your microphone. Data is transmitted to a back-end cloud service that varies based on the browser you're using (Google Chrome sends the audio to Google, Microsoft Edge to Microsoft, etc.).
+              <br><a href="https://littlepath.org/live-transcript">[Demo]</a>
+                  <a href="https://github.com/littlepath/live-transcript">[Source]</a>
+            </td> 
+          </tr>
+
 
         </table>
       </section>
