@@ -29,6 +29,9 @@
         padding: 0.5em;
       }
 
+      td p{
+        margin-top: 0;
+      }
 
       .side-img{
         float: left;
@@ -39,8 +42,8 @@
         position: absolute;
         top: 20vh;
         left: 40vw;
-        height: 60vh;
-        width: 45vw;
+        <!-- height: 60vh; -->
+        <!-- width: 45vw; -->
         z-index: 10;
         border: black solid 1px;
         background-color: #ccd4dc;
@@ -66,9 +69,9 @@
               <b>&lt;video-preview&gt;</b><br>
             </td>
             <td>
-              This element turns on your camera. No data is transmitted.
-              <br><a href="https://littlepath.org/video-preview">[Demo]</a>
-                  <a href="https://github.com/littlepath/video-preview">[Source]</a>
+              <p>This element turns on your camera. No data is transmitted.</p>
+              <p><a href="https://littlepath.org/video-preview">[Demo]</a>
+              <a href="https://github.com/littlepath/video-preview">[Source]</a></p>
             </td> 
           </tr>
 
@@ -77,9 +80,22 @@
               <b>&lt;live-transcript&gt;</b><br>
             </td>
             <td>
-              This element turns on your microphone. Data is transmitted to a back-end cloud service that varies based on the browser you're using (Google Chrome sends the audio to Google, Microsoft Edge to Microsoft, etc.).
-              <br><a href="https://littlepath.org/live-transcript">[Demo]</a>
-                  <a href="https://github.com/littlepath/live-transcript">[Source]</a>
+              <p>This element turns on your microphone.</p> 
+              <p>Audio from the W3C SpeechRecognition API is transmitted to a back-end cloud service that varies based on the browser you're using. For example, Google Chrome (the only browser where this works) sends the audio to Google cloud services. The reason the SpeechRecognition API doesn't work in other browsers is Microsoft, Apple, Mozilla, et al haven't wired up their respective browsers to a back-end cloud service.</p>
+              <p><a href="https://littlepath.org/live-transcript">[Demo]</a>
+              <a href="https://github.com/littlepath/live-transcript">[Source]</a></p>
+            </td> 
+          </tr>
+
+          <tr>
+            <td>
+              <b>&lt;zoom-cc&gt;</b><br>
+            </td>
+            <td>
+              <p>This element turns on your microphone.</p> 
+              <p>Data is transmitted to a back-end cloud service that varies based on the browser you're using (Google Chrome sends the audio to Google cloud services -- the only browser that currently supports the W3C SpeechRecognition API). The resulting transcripts are then forwarded to the Zoom URL that you provide for your meeting.</p>
+              <p><a href="https://littlepath.org/zoom-cc">[Demo]</a>
+              <a href="https://github.com/littlepath/zoom-cc">[Source]</a></p>
             </td> 
           </tr>
 
