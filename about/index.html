@@ -64,18 +64,19 @@
         <p>These components are browser-native, so they are designed to keep your data local, in-browser, unless otherwise noted. In other words, if these components send any of your data into the cloud, you'll know about it!</p>
 
         <table>
-          <tr>
+           <tr>
             <td>
-              <b>&lt;video-preview&gt;</b><br>
+              <b>&lt;audio-recorder&gt;</b><br>
             </td>
             <td>
-              <p>This element turns on your camera. No data is transmitted.</p>
-              <p><a href="https://littlepath.org/video-preview">[Demo]</a>
-              <a href="https://github.com/littlepath/video-preview">[Source]</a></p>
+              <p>This element turns on your microphone. No data is transmitted.</p>
+              <p>The recorded audio can be played back immediately, or saved for use later. You can also visit the <a href="https://littlepath.org/audio-tester/">Audio-Tester</a> to verify which audio formats are supported by your browser.</p>
+              <p><a href="https://littlepath.org/audio-recorder">[Demo]</a>
+              <a href="https://github.com/littlepath/audio-recorder">[Source]</a></p>
             </td> 
           </tr>
 
-          <tr>
+         <tr>
             <td>
               <b>&lt;live-transcript&gt;</b><br>
             </td>
@@ -84,6 +85,17 @@
               <p>Audio from the W3C SpeechRecognition API is transmitted to a back-end cloud service that varies based on the browser you're using. For example, Google Chrome (the only browser where this works) sends the audio to Google cloud services. The reason the SpeechRecognition API doesn't work in other browsers is Microsoft, Apple, Mozilla, et al haven't wired up their respective browsers to a back-end cloud service.</p>
               <p><a href="https://littlepath.org/live-transcript">[Demo]</a>
               <a href="https://github.com/littlepath/live-transcript">[Source]</a></p>
+            </td> 
+          </tr>
+
+          <tr>
+            <td>
+              <b>&lt;video-preview&gt;</b><br>
+            </td>
+            <td>
+              <p>This element turns on your camera. No data is transmitted.</p>
+              <p><a href="https://littlepath.org/video-preview">[Demo]</a>
+              <a href="https://github.com/littlepath/video-preview">[Source]</a></p>
             </td> 
           </tr>
 
